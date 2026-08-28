@@ -5,7 +5,7 @@
     "description": "Resource Pack for Kani's Delight",
     "uuid": "22222222-3333-4444-5555-666666666661",
     "version": [1, 0, 0],
-    "min_engine_version": [1, 16, 100]
+    "min_engine_version": [1, 21, 0]
   },
   "modules": [
     {
