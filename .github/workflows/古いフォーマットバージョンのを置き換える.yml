@@ -20,7 +20,7 @@ jobs:
         run: |
           # 検索して置換する文字列（1.16.100 や古い形式を最新の 1.21.30 へ）
           # 対象: items/ フォルダ内のすべての JSON ファイル
-          find items/ -type f -name "*.json" | while read -r file; do
+          find BP/items/ -type f -name "*.json" | while read -r file; do
             echo "Processing $file..."
             # sed を使って "format_version": "1.16.100" などを "1.21.30" に書き換える
             sed -i 's/"format_version"[[:space:]]*:[[:space:]]*"1\.16\.100"/"format_version": "1.21.30"/g' "$file"
