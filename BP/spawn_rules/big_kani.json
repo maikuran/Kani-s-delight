@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "kanis_delight:big_kani",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_block": ["minecraft:sand"],
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag",
+          "operator": "equals",
+          "value": "beach"
+        }
+      }
+    ]
+  }
+}
