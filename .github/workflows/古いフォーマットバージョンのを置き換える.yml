@@ -1,0 +1,34 @@
+name: Update Minecraft Addon Item Format Versions
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  update-versions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Replace old item format versions
+        run: |
+          # 検索して置換する文字列（1.16.100 や古い形式を最新の 1.21.30 へ）
+          # 対象: items/ フォルダ内のすべての JSON ファイル
+          find items/ -type f -name "*.json" | while read -r file; do
+            echo "Processing $file..."
+            # sed を使って "format_version": "1.16.100" などを "1.21.30" に書き換える
+            sed -i 's/"format_version"[[:space:]]*:[[:space:]]*"1\.16\.100"/"format_version": "1.21.30"/g' "$file"
+            sed -i 's/"format_version"[[:space:]]*:[[:space:]]*"1\.16\.0"/"format_version": "1.21.30"/g' "$file"
+          done
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update item format_version to 1.21.30"
+          branch: main
