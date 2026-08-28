@@ -1,0 +1,19 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "kanis_delight:sliced_kani",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": { "texture": "sliced_kani" },
+      "minecraft:display_name": { "value": "カニの身ほぐし" },
+      "minecraft:max_stack_size": 64,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation_modifier": "low",
+        "is_meat": true
+      }
+    }
+  }
+}
