@@ -1,0 +1,32 @@
+name: Update Recipe Format Versions
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  update-recipe-versions:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Replace old recipe format versions
+        run: |
+          find . -type f -name "*.json" | while read -r file; do
+            if grep -q "minecraft:recipe_shaped" "$file" || grep -q "minecraft:recipe_shapeless" "$file" || grep -q "minecraft:recipe_furnace" "$file"; then
+              echo "Updating recipe format in $file..."
+              sed -i 's/"format_version"[[:space:]]*:[[:space:]]*"1\.12\.0"/"format_version": "1.21.30"/g' "$file"
+            fi
+          done
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update recipe format_version to 1.21.30"
+          branch: main
