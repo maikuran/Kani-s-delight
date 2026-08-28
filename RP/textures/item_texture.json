@@ -1,0 +1,30 @@
+{
+  "resource_pack_name": "kanis_delight",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "kani": {
+      "textures": "textures/items/kani"
+    },
+    "banana": {
+      "textures": "textures/items/banana"
+    },
+    "truffle": {
+      "textures": "textures/items/truffle"
+    },
+    "sliced_kani": {
+      "textures": "textures/items/sliced_kani"
+    },
+    "kani_pasta": {
+      "textures": "textures/items/kani_pasta"
+    },
+    "banana_parfait": {
+      "textures": "textures/items/banana_parfait"
+    },
+    "truffle_soup": {
+      "textures": "textures/items/truffle_soup"
+    },
+    "jungle_salad": {
+      "textures": "textures/items/jungle_salad"
+    }
+  }
+}
