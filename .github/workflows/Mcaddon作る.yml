@@ -1,0 +1,27 @@
+name: Build Minecraft Addon (.mcaddon)
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create mcaddon archive
+        run: |
+          # フォルダ名が BP と RP である前提で圧縮
+          # リポジトリのルート直下に BP と RP フォルダがあることを確認してください
+          zip -r kanis_delight.mcaddon BP RP
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kanis_delight-mcaddon
+          path: kanis_delight.mcaddon
