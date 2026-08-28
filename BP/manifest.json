@@ -3,9 +3,9 @@
   "header": {
     "name": "Kani's Delight BP",
     "description": "Addon combining Big Kani, Jungle Banana, Truffle and Delights.",
-    "uuid": "11111111-2222-3333-4444-555555555551",
+    "uuid": "11111111-2222-3333-4444-5555f5555551",
     "version": [1, 0, 0],
-    "min_engine_version": [1, 16, 100]
+    "min_engine_version": [1, 21, 0]
   },
   "modules": [
     {
