@@ -2,7 +2,7 @@
   "format_version": "1.21.30",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanis_delight:big_kani",
+      "identifier": "kanis_delight:big_crab",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
