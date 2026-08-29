@@ -3,28 +3,28 @@
   "texture_name": "atlas.items",
   "texture_data": {
     "kani": {
-      "textures": "textures/items/kani"
+      "textures": "textures/item/kani"
     },
     "banana": {
-      "textures": "textures/items/banana"
+      "textures": "textures/item/banana"
     },
     "truffle": {
-      "textures": "textures/items/truffle"
+      "textures": "textures/item/truffle"
     },
     "sliced_kani": {
-      "textures": "textures/items/sliced_kani"
+      "textures": "textures/item/sliced_kani"
     },
     "kani_pasta": {
-      "textures": "textures/items/kani_pasta"
+      "textures": "textures/item/kani_pasta"
     },
     "banana_parfait": {
-      "textures": "textures/items/banana_parfait"
+      "textures": "textures/item/banana_parfait"
     },
     "truffle_soup": {
-      "textures": "textures/items/truffle_soup"
+      "textures": "textures/item/truffle_soup"
     },
     "jungle_salad": {
-      "textures": "textures/items/jungle_salad"
+      "textures": "textures/item/jungle_salad"
     }
   }
 }
