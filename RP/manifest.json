@@ -3,7 +3,7 @@
   "header": {
     "name": "Kani's Delight RP",
     "description": "Resource Pack for Kani's Delight",
-    "uuid": "22222222-3333-4444-5555-6f66a6666661",
+    "uuid": "22222222-3333-4444-5555-6f66a2666661",
     "version": [1, 0, 0],
     "min_engine_version": [1, 21, 30]
   },
@@ -11,7 +11,7 @@
     {
       "description": "Resource Pack for Kani's Delight",
       "type": "resources",
-      "uuid": "22222222-3333-4444-5555-6f6266666662",
+      "uuid": "22222222-3333-4444-5555-6f6266636662",
       "version": [1, 0, 0]
     }
   ]
