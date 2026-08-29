@@ -1,25 +1,22 @@
 {
   "format_version": "1.21.30",
-  "minecraft:recipe_shaped": {
+  "farmers_delight:cooking_pot": {
     "description": {
       "identifier": "kanis_delight:recipe_kani_pasta"
     },
-    "tags": ["cooking_pot"],
-    "pattern": [
-      "K M",
-      "W T",
-      " B "
+    "ingredients": [
+      { "item": "kanis_delight:sliced_kani" },
+      { "item": "minecraft:milk_bucket" },
+      { "item": "minecraft:wheat" },
+      { "item": "minecraft:sweet_berries" },
+      { "item": "minecraft:bowl" }
     ],
-    "key": {
-      "K": { "item": "kanis_delight:sliced_kani" },
-      "M": { "item": "minecraft:milk_bucket" },
-      "W": { "item": "minecraft:wheat" },
-      "T": { "item": "minecraft:sweet_berries" },
-      "B": { "item": "minecraft:bowl" }
-    },
     "result": {
       "item": "kanis_delight:kani_pasta",
       "count": 1
-    }
+    },
+    "cooking_time": 200,
+    "experience": 0.35,
+    "container": { "item": "minecraft:bowl" }
   }
 }
