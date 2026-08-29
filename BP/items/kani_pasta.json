@@ -11,7 +11,7 @@
       "minecraft:max_stack_size": 16,
       "minecraft:food": {
         "nutrition": 12,
-        "saturation_modifier": "supernatural",
+        "saturation_modifier": 9,
         "is_meat": true,
         "using_converts_to": "minecraft:bowl"
       }
