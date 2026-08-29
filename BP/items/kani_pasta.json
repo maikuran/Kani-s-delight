@@ -6,7 +6,12 @@
       "category": "equipment"
     },
     "components": {
-      "minecraft:icon": { "texture": "kani_pasta" },
+      "minecraft:icon": "kani_pasta",
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+         "use_duration": 1.3,
+         "movement_modifier": 0.33
+      },
       "minecraft:display_name": { "value": "カニのトマトクリームパスタ" },
       "minecraft:max_stack_size": 16,
       "minecraft:food": {
