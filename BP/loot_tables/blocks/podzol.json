@@ -7,6 +7,20 @@
           "type": "item",
           "name": "minecraft:dirt",
           "weight": 100
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 90
         },
         {
           "type": "item",
@@ -21,7 +35,12 @@
               }
             },
             {
-              "function": "minecraft:looting_enchant"
+              "function": "minecraft:apply_bonus",
+              "enchantment": "minecraft:fortune",
+              "formula": "minecraft:table_bonus",
+              "parameters": {
+                "values": [1.0, 1.2, 1.5, 2.0]
+              }
             }
           ]
         }
