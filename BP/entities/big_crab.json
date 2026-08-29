@@ -16,8 +16,16 @@
         "width": 1.2,
         "height": 0.8
       },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": true
+      },
       "minecraft:movement": {
         "value": 0.23
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": false
       },
       "minecraft:attack": {
         "damage": 9.5
@@ -26,11 +34,13 @@
         "table": "loot_tables/entities/big_kani.json"
       },
       "minecraft:breathable": {
-        "totalSupply": 15,
-        "suffocateTime": 0
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": true,
+        "breathes_air": true
       },
       "minecraft:type_family": {
-        "family": ["crab", "arthropod"]
+        "family": ["crab", "arthropod", "monster"]
       },
       "minecraft:despawn": {
         "despawn_from_distance": {}
