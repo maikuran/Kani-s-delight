@@ -13,7 +13,7 @@
          "movement_modifier": 0.33
       },
       "minecraft:display_name": { "value": "カニの身ほぐし" },
-      "minecraft:max_stack_size": 128,
+      "minecraft:max_stack_size": 64,
       "minecraft:food": {
         "nutrition": 2,
         "saturation_modifier": 0.9,
